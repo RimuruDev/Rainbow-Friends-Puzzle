@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{BE4C42DE-5188-4A16-CB45-624F60B867A8}|">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ScreenshotGameScreen.cs">
+    <Files>
+      <File FileName="Assets/Scripts/PuzzleMover.cs" />
+      <File FileName="Assets/Shaders/UnlitGridShader.shader" />
+      <File FileName="Assets/ScalerController.cs" />
+      <File FileName="Assets/RotationController.cs" />
+      <File FileName="Assets/Play.cs" />
+      <File FileName="Assets/GoNext.cs" Line="42" Column="13" />
+      <File FileName="Assets/Reload.cs" />
+      <File FileName="Assets/ScreenshotGameScreen.cs" Line="18" Column="74" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Simple-Puzzle" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True" />
+              <Node name="Shaders" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d151713d-aa69-4deb-95cb-ac803d924d38" />
+  <MultiItemStartupConfigurations />
+</Properties>
