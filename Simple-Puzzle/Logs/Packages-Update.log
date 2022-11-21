@@ -45,3 +45,32 @@ The following packages were added:
   com.unity.timeline@1.6.4
   com.unity.ugui@1.0.0
   com.unity.visualscripting@1.7.8
+
+=== Mon Nov 21 13:35:32 2022
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.ide.rider from version 3.0.15 to 3.0.16
+
+=== Mon Nov 21 17:43:01 2022
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.2d.animation from version 5.0.9 to 7.0.8
+  com.unity.2d.spriteshape from version 5.1.5 to 7.0.6
+  com.unity.test-framework from version 1.1.29 to 1.1.31
+  com.unity.timeline from version 1.4.8 to 1.6.4
+
+=== Mon Nov 21 17:43:02 2022
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.2d.animation@7.0.8
+  com.unity.2d.sprite@1.0.0
+  com.unity.2d.spriteshape@7.0.6

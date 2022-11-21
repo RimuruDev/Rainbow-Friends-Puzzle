@@ -1,14 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PuzzleMover : MonoBehaviour
 {
     public System.Action OnWin;
     public Transform popup;
     [SerializeField] private bool isImmediately = true;
-    [SerializeField] private float duration = 1;
+    [SerializeField] private float duration = 0.3f;
     [SerializeField] private AnimationCurve animationCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
     [SerializeField] private AnimationCurve scaleCurve = null;
 
@@ -17,8 +15,18 @@ public class PuzzleMover : MonoBehaviour
     private List<PuzzleElement> movingPuzzles = new List<PuzzleElement>();
 
     private PuzzleGenerator puzzleGenerator = null;
+    private PuzzleClicker puzzleClicker = null;
+
+    private void Reset()
+    {
+       // duration = 1;
+        isImmediately = true;
+        animationCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
+    }
+
     private void Awake()
     {
+        duration = 0.3f;
         popup = GameObject.FindGameObjectWithTag("Finish").transform;
         popup.gameObject.SetActive(false);
     }
@@ -26,6 +34,7 @@ public class PuzzleMover : MonoBehaviour
     private void Start()
     {
         puzzleGenerator = FindObjectOfType<PuzzleGenerator>();
+        puzzleClicker = FindObjectOfType<PuzzleClicker>();
 
         //popup = GameObject.FindGameObjectWithTag("Finish").transform;
     }
@@ -40,50 +49,48 @@ public class PuzzleMover : MonoBehaviour
         }
     }
 
-    private void OnEnable()
-    {
-        OnWin += Win;
-    }
+    private void OnEnable() => OnWin += Win;
 
-    private void OnDisable()
-    {
-        OnWin -= Win;
-    }
+    private void OnDisable() => OnWin -= Win;
 
     private void OnUpdateMovePuzzles()
     {
         if (isMoving)
         {
-            percentage01 += 1f / duration * Time.deltaTime;
-
-            float smoothPercent01 = animationCurve.Evaluate(percentage01);
-            float scaleValue = scaleCurve.Evaluate(percentage01);
-
-            for (int i = 0; i < movingPuzzles.Count; i++)
+            puzzleClicker.gameObject.SetActive(false);
             {
-                var p = movingPuzzles[i];
-                p.LerpTowards(smoothPercent01);
+                percentage01 += 1f / duration * Time.deltaTime;
 
-                p.transform.localScale = Vector2.one * scaleValue;
-            }
+                float smoothPercent01 = animationCurve.Evaluate(percentage01);
+                float scaleValue = scaleCurve.Evaluate(percentage01);
 
-            if (percentage01 >= 1)
-            {
                 for (int i = 0; i < movingPuzzles.Count; i++)
                 {
                     var p = movingPuzzles[i];
-                    p.SetTarget();
+                    p.LerpTowards(smoothPercent01);
+
+                    p.transform.localScale = Vector2.one * scaleValue;
                 }
 
-                if (puzzleGenerator.ValidatePuzzles())
+                if (percentage01 >= 1)
                 {
-                    Debug.Log("Success! (smooth)");
-                    Debug.Log("YouWin");
-                    OnWin?.Invoke();
-                }
+                    for (int i = 0; i < movingPuzzles.Count; i++)
+                    {
+                        var p = movingPuzzles[i];
+                        p.SetTarget();
+                    }
 
-                isMoving = false;
+                    if (puzzleGenerator.ValidatePuzzles())
+                    {
+                        Debug.Log("Success! (smooth)");
+                        Debug.Log("YouWin");
+                        OnWin?.Invoke();
+                    }
+
+                    isMoving = false;
+                }
             }
+            puzzleClicker.gameObject.SetActive(true);
         }
     }
 
@@ -120,13 +127,5 @@ public class PuzzleMover : MonoBehaviour
     {
         Destroy(FindObjectOfType<PuzzleGenerator>().gameObject);
         popup.gameObject.SetActive(true);
-        /*
-        if (SceneManager.GetActiveScene().name == "Level_4") { Debug.Log("Max level"); return; }
-
-        var index = SceneManager.GetActiveScene().buildIndex;
-        index++;
-
-        SceneManager.LoadSceneAsync($"Level_{index}");
-        */
     }
 }
