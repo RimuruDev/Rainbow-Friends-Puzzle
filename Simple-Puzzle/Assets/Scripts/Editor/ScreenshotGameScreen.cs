@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using System.IO;
 
-namespace RimuruDev
+namespace RimuruDev.Editors
 {
     public class ScreenshotGameScreen : Editor
     {
