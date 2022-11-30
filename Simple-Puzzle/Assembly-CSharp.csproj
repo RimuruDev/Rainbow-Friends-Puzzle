@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\GoNext.cs" />
     <Compile Include="Assets\Scripts\DemoTester.cs" />
     <Compile Include="Assets\Scripts\RotationController.cs" />
+    <Compile Include="Assets\ClickHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
