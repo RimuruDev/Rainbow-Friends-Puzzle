@@ -7,7 +7,7 @@ namespace RimuruDev
     {
         [SerializeField] private AudioSource audioSource;
 
-        private void Awake()
+        private void Start()
         {
             EventTrigger eventTrigger = GetComponent<EventTrigger>();
             EventTrigger.Entry eventClick = new EventTrigger.Entry();

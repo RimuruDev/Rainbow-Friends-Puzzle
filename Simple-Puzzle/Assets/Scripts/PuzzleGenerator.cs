@@ -9,7 +9,6 @@ public class PuzzleGenerator : MonoBehaviour
     [SerializeField] private float spacing = 1;
     [SerializeField] private PuzzleElement puzzleElementPrefab = null;
     public PuzzleElement GetpuzzleElementPrefab { get => puzzleElementPrefab; set => puzzleElementPrefab = value; }
-
     private PuzzleElement[] puzzles = null;
 
     private BackgroundElement bg = null;

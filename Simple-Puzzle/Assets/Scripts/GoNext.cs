@@ -1,36 +1,25 @@
 using System;
 using System.Collections;
-using System.Reflection;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace RimuruDev
 {
     public class GoNext : MonoBehaviour
     {
         public float time = 3;
-        private Text text;
-        private Text btext;
-
-        private GameController gameController;
-
-        private void Awake()
-        {
-            gameController = FindObjectOfType<GameController>();
-        }
+        private UnityEngine.UI.Text text;
+        private TMPro.TMP_Text btext;
 
         private void Start()
         {
-            btext = GetComponent<Button>().GetComponentInChildren<Text>();
+            btext = GetComponent<Button>().GetComponentInChildren<TMPro.TMP_Text>();
             GetComponent<UnityEngine.UI.Button>().onClick.AddListener(delegate
-            {
-                /*
-                if (gameController.Index >= gameController.comaryDataset.GetComaryData.Length)
+            {/*
+                if (SceneManager.GetActiveScene().name == "Level_4")
                 {
-                    gameController.Index = 0;
-                    Debug.Log("!!!!!!!!!!!!!!!Load main menu");
-
                     Debug.Log("Max level");
                     text = GameObject.FindGameObjectWithTag("WinText").GetComponent<UnityEngine.UI.Text>();
                     text.text = "You Win Game!\nGo Main Menu!";
@@ -38,40 +27,15 @@ namespace RimuruDev
                     return;
                 }
 
-                if (gameController.Index >= gameController.joJoDataset.GetJoJoData.Length)
-                {
-                    gameController.Index = 0;
-                    Debug.Log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Load main menu");
-
-                    Debug.Log("Max level");
-                    text = GameObject.FindGameObjectWithTag("WinText").GetComponent<UnityEngine.UI.Text>();
-                    text.text = "You Win Game!\nGo Main Menu!";
-                    StartCoroutine(Timer());
-                    return;
-                }*/
-
-                /*
-                if (SceneManager.GetActiveScene().buildIndex > SceneManager.sceneCount)
-                {
-                    Debug.Log("Max level");
-                    text = GameObject.FindGameObjectWithTag("WinText").GetComponent<UnityEngine.UI.Text>();
-                    text.text = "You Win Game!\nGo Main Menu!";
-                    StartCoroutine(Timer());
-                    return;
-                }*/
-
-                //var index = SceneManager.GetActiveScene().buildIndex;
-                //index++;)
-                if (SceneManager.GetActiveScene().name == "Level_0")
-                    SceneManager.LoadSceneAsync("Level_0");//SceneManager.GetActiveScene().buildIndex
-                else
-
-                    SceneManager.LoadSceneAsync("Level_1");//SceneManager.GetActiveScene().buildIndex);
+                var index = SceneManager.GetActiveScene().buildIndex;
+                //index++;
+                */
                 // SceneManager.LoadSceneAsync($"Level_{index}");
+                SceneManager.LoadSceneAsync($"Level_{0}");
             });
         }
         bool istext;
-        public IEnumerator Timer()
+        private IEnumerator Timer()
         {
             istext = true;
             yield return new WaitForSeconds(time);

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d36f795b52fc1d4fa1460334d2b6a68, type: 3}
   m_Name: Monster_2
   m_EditorClassIdentifier: 
-  monsterPrefab: {fileID: 5720292985448564387, guid: 34ab2a8e56fb67344b676a9a937eb865,
+  monsterPrefab: {fileID: 5720292985448564387, guid: fd19a3489abb94a329beeab5a3ee4aeb,
     type: 3}
   monsterSprite: {fileID: 21300000, guid: 76449ca78635043d496b16a0376e3f0e, type: 3}

@@ -205,7 +205,7 @@ public class PuzzleElement : MonoBehaviour
 
         return uv;
     }
-
+    
     private Vector2[] GetDefaultUV()
     {
         Vector2[] defaultUV = new Vector2[]
