@@ -56,46 +56,46 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\PuzzleGenerator.cs" />
-    <Compile Include="Assets\SO\Scripts\MonsterData.cs" />
-    <Compile Include="Assets\Scripts\PuzzleElement.cs" />
-    <Compile Include="Assets\SO\Scripts\MonsterDataset.cs" />
-    <Compile Include="Assets\Scripts\ScalerController.cs" />
-    <Compile Include="Assets\Scripts\Play.cs" />
-    <Compile Include="Assets\Scripts\GameController.cs" />
-    <Compile Include="Assets\Scripts\PuzzleMover.cs" />
-    <Compile Include="Assets\Scripts\PuzzleClicker.cs" />
-    <Compile Include="Assets\Scripts\BackgroundElement.cs" />
-    <Compile Include="Assets\Scripts\Reload.cs" />
-    <Compile Include="Assets\Scripts\ClickHandler.cs" />
-    <Compile Include="Assets\Scripts\GoNext.cs" />
-    <Compile Include="Assets\Scripts\DemoTester.cs" />
-    <Compile Include="Assets\Scripts\RotationController.cs" />
+    <Compile Include="Assets\InternalAssets\Scripts\Core\PuzzleGenerator.cs" />
+    <Compile Include="Assets\InternalAssets\Scripts\SO\MonsterData.cs" />
+    <Compile Include="Assets\InternalAssets\Scripts\Core\PuzzleElement.cs" />
+    <Compile Include="Assets\InternalAssets\Scripts\SO\MonsterDataset.cs" />
+    <Compile Include="Assets\InternalAssets\Scripts\Helpers\ScalerController.cs" />
+    <Compile Include="Assets\InternalAssets\Scripts\UI\Play.cs" />
+    <Compile Include="Assets\InternalAssets\Scripts\Core\GameController.cs" />
+    <Compile Include="Assets\InternalAssets\Scripts\Core\PuzzleMover.cs" />
+    <Compile Include="Assets\InternalAssets\Scripts\Core\PuzzleClicker.cs" />
+    <Compile Include="Assets\InternalAssets\Scripts\Core\BackgroundElement.cs" />
+    <Compile Include="Assets\InternalAssets\Scripts\UI\Reload.cs" />
+    <Compile Include="Assets\InternalAssets\Scripts\UI\ClickHandler.cs" />
+    <Compile Include="Assets\InternalAssets\Scripts\UI\GoNext.cs" />
+    <Compile Include="Assets\InternalAssets\Scripts\Helpers\DemoTester.cs" />
+    <Compile Include="Assets\InternalAssets\Scripts\Helpers\RotationController.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\Shaders\UnlitGridShader.shader" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\Sweet Land GUI\READ ME.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\ExternalAssets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\ExternalAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\ExternalAssets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\ExternalAssets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\ExternalAssets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\ExternalAssets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\ExternalAssets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\InternalAssets\Art\Shaders\UnlitGridShader.shader" />
+    <None Include="Assets\ExternalAssets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\ExternalAssets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\ExternalAssets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\ExternalAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\ExternalAssets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\ExternalAssets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\ExternalAssets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\ExternalAssets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\ExternalAssets\Sweet Land GUI\READ ME.txt" />
+    <None Include="Assets\ExternalAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\ExternalAssets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\ExternalAssets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\ExternalAssets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\ExternalAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\ExternalAssets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -847,13 +847,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Hierarchy2.Editor.csproj">
-      <Project>{7598B15A-15E0-F862-0D78-3BDC65AAD38C}</Project>
-      <Name>Hierarchy2.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Hierarchy2.Runtime.csproj">
       <Project>{4870DF96-14EC-2B36-0656-06303C8F2FCE}</Project>
       <Name>Hierarchy2.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Hierarchy2.Editor.csproj">
+      <Project>{7598B15A-15E0-F862-0D78-3BDC65AAD38C}</Project>
+      <Name>Hierarchy2.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
