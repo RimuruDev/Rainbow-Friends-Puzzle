@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class PuzzleElement : MonoBehaviour
@@ -205,7 +204,7 @@ public class PuzzleElement : MonoBehaviour
 
         return uv;
     }
-    
+
     private Vector2[] GetDefaultUV()
     {
         Vector2[] defaultUV = new Vector2[]
