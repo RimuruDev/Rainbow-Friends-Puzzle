@@ -13,7 +13,11 @@
 /[Kk]eys/
 /[Tt]rash
 /Logs/
-
+/Builds/
+*/Builds/
+/Builds/*
+*/Builds/*
+/[Bb]uilds/*
 # Others
 /NextbotRebirthProject/Assets/Trash/
 NextbotRebirthProject/Assets/ExternalAssets/Plugins/
