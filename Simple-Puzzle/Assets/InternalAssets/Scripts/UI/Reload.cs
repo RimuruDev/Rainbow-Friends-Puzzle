@@ -10,7 +10,7 @@ namespace RimuruDev
         {
             GetComponent<Button>().onClick.AddListener(delegate
             {
-                if (gameObject.name == "MainMenu")
+                if (gameObject.CompareTag("Finish"))
                     SceneManager.LoadSceneAsync("MainScene");
                 else
                     SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
