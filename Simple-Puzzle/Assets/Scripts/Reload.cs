@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,7 +10,10 @@ namespace RimuruDev
         {
             GetComponent<Button>().onClick.AddListener(delegate
             {
-                SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+                if (gameObject.name == "Menu")
+                    SceneManager.LoadSceneAsync("MainScene");
+                else
+                    SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
             });
         }
     }

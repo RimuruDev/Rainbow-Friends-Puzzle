@@ -57,17 +57,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PuzzleGenerator.cs" />
+    <Compile Include="Assets\SO\Scripts\MonsterData.cs" />
     <Compile Include="Assets\Scripts\PuzzleElement.cs" />
+    <Compile Include="Assets\SO\Scripts\MonsterDataset.cs" />
     <Compile Include="Assets\Scripts\ScalerController.cs" />
     <Compile Include="Assets\Scripts\Play.cs" />
+    <Compile Include="Assets\GameController.cs" />
     <Compile Include="Assets\Scripts\PuzzleMover.cs" />
     <Compile Include="Assets\Scripts\PuzzleClicker.cs" />
     <Compile Include="Assets\Scripts\BackgroundElement.cs" />
     <Compile Include="Assets\Scripts\Reload.cs" />
+    <Compile Include="Assets\ClickHandler.cs" />
     <Compile Include="Assets\Scripts\GoNext.cs" />
     <Compile Include="Assets\Scripts\DemoTester.cs" />
     <Compile Include="Assets\Scripts\RotationController.cs" />
-    <Compile Include="Assets\ClickHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

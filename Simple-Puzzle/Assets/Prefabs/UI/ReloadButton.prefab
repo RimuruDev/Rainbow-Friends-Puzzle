@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5006065172873950797}
   - component: {fileID: 5006065172873950798}
   - component: {fileID: 5006065172873950799}
-  - component: {fileID: 5006065172873950796}
+  - component: {fileID: 427636627929819989}
   m_Layer: 5
   m_Name: ReloadButton
   m_TagString: Untagged
@@ -38,7 +38,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -192.99998, y: 162}
+  m_AnchoredPosition: {x: -193, y: 162}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.3451117, y: 3.4502442}
 --- !u!222 &5006065172873950797
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5006065172873950796
+--- !u!114 &427636627929819989
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

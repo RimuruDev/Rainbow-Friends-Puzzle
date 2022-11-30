@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 3835
+  controlID: 13865
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 3836
+  controlID: 13866
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 3837
+  controlID: 13867
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -227,9 +227,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a25e0000
-      m_LastClickedID: 24226
-      m_ExpandedIDs: eef8ffff2efbffff6e5e0000
+      m_SelectedIDs: 28830000
+      m_LastClickedID: 33576
+      m_ExpandedIDs: 889effffc8acffffccacffffdeacffffe0acffff60dfffffe2dfffff64e0ffffe6e0ffff68e1ffffeae1ffff6ee2ffff2efbffff64800000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -538,9 +538,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.333759, y: -2.5564985, z: 670.00146}
+    m_Target: {x: -0.08036685, y: 0, z: 90}
     speed: 2
-    m_Value: {x: -0.333759, y: -2.5564985, z: 670.00146}
+    m_Value: {x: -0.08036685, y: 0, z: 90}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -591,9 +591,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 3.6137235
+    m_Target: 4.0290155
     speed: 2
-    m_Value: 3.6137235
+    m_Value: 4.0290155
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -668,7 +668,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 3682
+  controlID: 13816
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -686,7 +686,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 753
+    width: 583
     height: 240
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
@@ -719,7 +719,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 468
-    width: 752
+    width: 582
     height: 219
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -738,22 +738,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/SO/Dataset
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/SO/Dataset
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Rimuru\Git\My\Rainbow-Friends-Puzzle-v0.1.0\Simple-Puzzle
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 345f0000
-    m_LastClickedID: 24372
-    m_ExpandedIDs: 0000000000ca9a3b
+    scrollPos: {x: 0, y: 41}
+    m_SelectedIDs: 667f0000
+    m_LastClickedID: 32614
+    m_ExpandedIDs: 00000000345f0000385f0000467f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -781,7 +781,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000000ca9a3b
+    m_ExpandedIDs: 00000000385f0000467f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -806,8 +806,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: a25e0000
-    m_LastClickedInstanceID: 24226
+    m_SelectedInstanceIDs: 28830000
+    m_LastClickedInstanceID: 33576
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -833,7 +833,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 35}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
@@ -881,9 +881,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 753
+    x: 583
     y: 0
-    width: 286
+    width: 456
     height: 240
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
@@ -913,9 +913,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 753
+    x: 583
     y: 468
-    width: 284
+    width: 454
     height: 219
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -934,22 +934,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/SO/Monsters
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/SO/Monsters
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Rimuru\Git\My\Rainbow-Friends-Puzzle-v0.1.0\Simple-Puzzle
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 385f0000
-    m_LastClickedID: 24376
-    m_ExpandedIDs: 00000000345f000000ca9a3b
+    scrollPos: {x: 0, y: 93}
+    m_SelectedIDs: 627f0000
+    m_LastClickedID: 32610
+    m_ExpandedIDs: 00000000345f0000385f0000467f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -977,7 +977,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000000ca9a3b
+    m_ExpandedIDs: 00000000385f0000467f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1002,10 +1002,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: a25e0000
-    m_LastClickedInstanceID: 24226
+    m_SelectedInstanceIDs: 28830000
+    m_LastClickedInstanceID: 33576
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 
+    m_ExpandedInstanceIDs: d45e0000826300001e690000be010000ce5e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

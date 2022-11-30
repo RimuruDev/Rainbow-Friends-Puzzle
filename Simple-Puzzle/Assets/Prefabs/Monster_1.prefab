@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4119733937989837661}
   - component: {fileID: 2744860470834535423}
   m_Layer: 0
-  m_Name: HagiWagi2
+  m_Name: Monster_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,7 +78,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2da918f3d18104aafa3162dacd2d7446, type: 2}
+  - {fileID: 2100000, guid: 52c3c5d680e404a418f3f7cc0764c9fc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
