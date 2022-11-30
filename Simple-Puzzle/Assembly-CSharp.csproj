@@ -62,12 +62,12 @@
     <Compile Include="Assets\SO\Scripts\MonsterDataset.cs" />
     <Compile Include="Assets\Scripts\ScalerController.cs" />
     <Compile Include="Assets\Scripts\Play.cs" />
-    <Compile Include="Assets\GameController.cs" />
+    <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\PuzzleMover.cs" />
     <Compile Include="Assets\Scripts\PuzzleClicker.cs" />
     <Compile Include="Assets\Scripts\BackgroundElement.cs" />
     <Compile Include="Assets\Scripts\Reload.cs" />
-    <Compile Include="Assets\ClickHandler.cs" />
+    <Compile Include="Assets\Scripts\ClickHandler.cs" />
     <Compile Include="Assets\Scripts\GoNext.cs" />
     <Compile Include="Assets\Scripts\DemoTester.cs" />
     <Compile Include="Assets\Scripts\RotationController.cs" />
@@ -847,6 +847,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Hierarchy2.Editor.csproj">
+      <Project>{7598B15A-15E0-F862-0D78-3BDC65AAD38C}</Project>
+      <Name>Hierarchy2.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Hierarchy2.Runtime.csproj">
+      <Project>{4870DF96-14EC-2B36-0656-06303C8F2FCE}</Project>
+      <Name>Hierarchy2.Runtime</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
