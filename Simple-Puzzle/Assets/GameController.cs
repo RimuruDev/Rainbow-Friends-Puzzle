@@ -21,6 +21,7 @@ namespace RimuruDev
         [SerializeField, HideInInspector] private PuzzleGenerator puzzleGenerator = null;
         [SerializeField, HideInInspector] private PuzzleMover puzzleMover = null;
 
+
         private int index = 0;
         public int Index { get => index; set => index = value; }
 
@@ -28,10 +29,10 @@ namespace RimuruDev
 
         private void Start()
         {
-            if (PlayerPrefs.GetInt("Index") <= 0)
-                PlayerPrefs.SetInt("Index", 0);
-            else
-                index = PlayerPrefs.GetInt("Index");
+            // if (PlayerPrefs.GetInt("Index") <= 0)
+            //PlayerPrefs.SetInt("Index", 0);
+            // else
+            index = PlayerPrefs.GetInt("Index");
 
             Debug.Log($"Current level: {index}");
 

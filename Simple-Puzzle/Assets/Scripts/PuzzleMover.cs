@@ -1,5 +1,4 @@
-﻿using RimuruDev;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class PuzzleMover : MonoBehaviour
@@ -17,7 +16,6 @@ public class PuzzleMover : MonoBehaviour
 
     private PuzzleGenerator puzzleGenerator = null;
     private PuzzleClicker puzzleClicker = null;
-    private GameController gameController;
 
     private void Reset()
     {
@@ -30,7 +28,6 @@ public class PuzzleMover : MonoBehaviour
     {
         duration = 0.3f;
         popup = GameObject.FindGameObjectWithTag("Finish").transform;
-        gameController = FindObjectOfType<GameController>();
         popup.gameObject.SetActive(false);
     }
 
@@ -38,6 +35,7 @@ public class PuzzleMover : MonoBehaviour
     {
         puzzleGenerator = FindObjectOfType<PuzzleGenerator>();
         puzzleClicker = FindObjectOfType<PuzzleClicker>();
+
         //popup = GameObject.FindGameObjectWithTag("Finish").transform;
     }
 
@@ -127,10 +125,9 @@ public class PuzzleMover : MonoBehaviour
 
     private void Win()
     {
-        var index = gameController.Index += 1;
+        int index = PlayerPrefs.GetInt("Index");
+        index++;
         PlayerPrefs.SetInt("Index", index);
-
-        Debug.Log(PlayerPrefs.GetInt("Index"));
 
         Destroy(FindObjectOfType<PuzzleGenerator>().gameObject);
         popup.gameObject.SetActive(true);
