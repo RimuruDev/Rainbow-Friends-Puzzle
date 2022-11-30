@@ -39,6 +39,7 @@ namespace RimuruDev
             if (index >= comaryDataset.GetMonsterData.Length)
             {
                 index = 0;
+                PlayerPrefs.SetInt("Index", index);
                 Debug.Log("You with maximum levels!");
                 // SceneManager.LoadSceneAsync("MainScene");
             }

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace RimuruDev
@@ -14,7 +13,7 @@ namespace RimuruDev
         public bool isRotate = true;
 
         //private void Start() => StartCoroutine(InfinityRotateMedKin());
-//
+        //
         private IEnumerator InfinityRotateMedKin()
         {
             while (transform.rotation.z < 180)
