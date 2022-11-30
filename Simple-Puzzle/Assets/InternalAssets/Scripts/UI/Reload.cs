@@ -6,13 +6,16 @@ using UnityEngine.UI;
 
 namespace RimuruDev
 {
-    public class Reload : MonoBehaviour
+    public sealed class Reload : MonoBehaviour
     {
         private void Start()
         {
             GetComponent<Button>().onClick.AddListener(delegate
             {
-                SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+                if (gameObject.name == "MainMenu")
+                    SceneManager.LoadSceneAsync("MainScene");
+                else
+                    SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
             });
         }
     }
