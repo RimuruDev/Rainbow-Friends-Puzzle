@@ -15,7 +15,11 @@ namespace RimuruDev
             eventClick.eventID = EventTriggerType.PointerClick;
             eventTrigger.triggers.Add(eventClick);
 
-            eventClick.callback.AddListener((eventData) => { audioSource.Play(); });
+            eventClick.callback.AddListener((eventData) =>
+            {
+                if (audioSource != null)
+                    audioSource.Play();
+            });
         }
     }
 }
